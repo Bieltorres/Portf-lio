@@ -1096,6 +1096,14 @@ textarea:focus {
     padding: 0 40px;
   }
 
+  .personal-info {
+    margin: 2rem 0;
+  }
+
+  .personal-info .row {
+    padding-bottom: 3rem;
+  }
+
   #icons1 {
     display: inline;
     display: flex;
