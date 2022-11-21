@@ -153,7 +153,7 @@ a i {
 }
 
 #titles {
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .title {
@@ -730,9 +730,182 @@ textarea:focus {
   #title-aside {
     font-size: 16px;
     padding: 5px 10px;
+    letter-spacing: 3px;
   }
 
   .content-aside-left {
     width: 95%;
+  }
+
+  #main-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-home {
+    min-height: 20%;
+  }
+
+  #titles #text-user {
+    font-size: 18px;
+  }
+
+  #titles #title2 {
+    font-size: 22px;
+  }
+
+  #titles #title3 {
+    font-size: 16px;
+  }
+
+  #img-content {
+    margin: 0 1rem 0 5rem;
+    width: 40%;
+  }
+
+  .about-section {
+    min-height: 25%;
+  }
+
+  .portfolio .portfolio-row {
+    width: 100%;
+  }
+
+  .portifolio-item {
+    width: 250px;
+  }
+}
+
+@media (max-width: 545px) {
+  /* Aside */
+
+  .content-aside-left {
+    min-height: 100vh;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .text-aside h2 {
+    font-size: 14px !important;
+  }
+
+  #links-aside li a {
+    font-size: 14px;
+  }
+
+  #links-aside li a i {
+    display: none;
+  }
+
+  #icons {
+    flex-wrap: wrap;
+  }
+
+  /* Content right */
+  .content-home {
+    min-height: 15%;
+  }
+
+  #titles {
+    margin-left: 1rem;
+  }
+
+  #img-content {
+    display: none;
+  }
+
+  .about-section {
+    min-height: 30%;
+  }
+
+  .about-container {
+    padding: 0;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
+  .about-content .row {
+    margin-left: 0.5rem;
+  }
+
+  .about-content .row-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-content .row3 {
+    font-size: 16px;
+    margin-left: 1rem;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .personal-info {
+    max-width: 100%;
+  }
+
+  .skills {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .skills .skill-item {
+    margin: 0 0 10px 0;
+  }
+
+  /* Portfolio */
+
+  .portfolio-section {
+    margin-top: 5rem;
+  }
+
+  .portifolio-item {
+    width: 150px;
+    height: 150px;
+  }
+
+  .container-portfolio .row {
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  .title-img {
+    font-size: 18px;
+  }
+
+  /* Contact section */
+
+  #contact-link {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .contact-title {
+    font-size: 22px;
+  }
+
+  .contact-sub-title {
+    font-size: 20px;
+  }
+
+  .row-contact {
+    display: flex;
+    gap: 0 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .contact-info-item {
+    margin: 0rem 1rem;
+  }
+
+  .contact-info-item p {
+    font-size: 16px;
   }
 }
