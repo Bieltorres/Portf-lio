@@ -742,6 +742,10 @@ textarea:focus {
     justify-content: center;
   }
 
+  #main-content #titles {
+    margin-left: 1.1rem;
+  }
+
   .content-home {
     min-height: 20%;
   }
@@ -767,12 +771,39 @@ textarea:focus {
     min-height: 25%;
   }
 
+  .about-section .about-container {
+    padding: 15px 0 0 5px;
+  }
+
+  .section-title h1 {
+    font-size: 24px;
+  }
+
+  .about-text h3 {
+    font-size: 18px;
+  }
+
   .portfolio .portfolio-row {
     width: 100%;
   }
 
   .portifolio-item {
     width: 250px;
+  }
+
+  /* Contact */
+
+  .row-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px 30px;
+    justify-content: center;
+  }
+
+  #contact-link {
+    justify-content: center;
+    padding: 0;
   }
 }
 
@@ -808,6 +839,10 @@ textarea:focus {
 
   #titles {
     margin-left: 1rem;
+  }
+
+  #titles #title3 {
+    margin-right: 10px;
   }
 
   #img-content {
@@ -902,10 +937,14 @@ textarea:focus {
   }
 
   .contact-info-item {
-    margin: 0rem 1rem;
+    margin: 0.5rem 0rem;
+  }
+
+  .contact-info-item h4 {
+    font-size: 16px;
   }
 
   .contact-info-item p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
