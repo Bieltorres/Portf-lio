@@ -119,6 +119,19 @@ a i {
 }
 /*  Main content  (right)*/
 
+.main {
+  display: flex;
+  justify-content: end;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 80%;
+}
+
 .hiden {
   display: none !important;
 }
@@ -130,7 +143,7 @@ a i {
   flex-direction: column;
   color: aliceblue;
   width: 100%;
-  min-height: 650px;
+  min-height: 25%;
 }
 
 #main-content {
@@ -154,10 +167,6 @@ a i {
 #title3 {
   font-size: 20px;
   margin-bottom: 3rem;
-}
-
-#content-right {
-  margin-left: 20%;
 }
 
 .name {
@@ -221,11 +230,8 @@ a i {
 
 .about-section {
   display: flex;
-  height: 650px;
-  width: 80%;
-  margin-left: 20%;
-  justify-content: flex-end;
-  align-items: center;
+  min-height: 25%;
+  width: 100%;
 }
 
 .about-container {
@@ -237,6 +243,7 @@ a i {
 .section-title {
   flex: 0 0 100%;
   max-width: 100%;
+  padding-left: 15px;
   margin-bottom: 60px;
 }
 
@@ -411,14 +418,17 @@ a i {
 /*     Portfólio       */
 
 .container-portfolio {
-  width: 80%;
-  margin-left: 20%;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 25%;
 }
 
 .container-portfolio .row {
   color: aliceblue;
   padding: 35px 0px 0px 35px;
+}
+
+.container-portfolio .row .section-title {
+  margin-bottom: 1rem;
 }
 
 .container-portfolio .section-title h1 {
@@ -432,6 +442,10 @@ a i {
 
 .container-portfolio .section-title h1::after {
   box-shadow: 1px 4px 4px black;
+}
+
+.portfolio-heading h3 {
+  padding-left: 1.5rem;
 }
 
 .portfolio-container {
@@ -592,29 +606,31 @@ a i {
 }
 
 .contact-section {
+  margin-top: 5rem;
   width: 100%;
-  min-height: 100vh;
   color: aliceblue;
+  background-color: #1c1b1b;
 }
 
-.contact-section .container {
-  width: 80%;
-  margin-left: 20%;
-  padding: 35px 0px 0px 35px;
+#contact-link {
+  padding-left: 3rem;
 }
 
-.contact-section .container .contact-title {
+.contact-title {
   color: orangered;
   text-align: center;
   font-size: 25px;
-  margin-bottom: 20px;
 }
 
-.contact-section .container .contact-sub-title {
+.contact-sub-title {
   color: aliceblue;
   text-align: center;
   font-size: 25px;
-  margin-bottom: 60px;
+  padding-bottom: 2rem;
+}
+
+.row-contact {
+  display: flex;
 }
 
 .contact-info-item {
@@ -622,10 +638,6 @@ a i {
   max-width: 25%;
   margin-bottom: 50px;
   text-align: center;
-}
-
-.contact-section .container .row {
-  display: flex;
 }
 
 .contact-info-item i {
@@ -699,7 +711,7 @@ textarea:focus {
 .form-item-btn {
   display: flex;
   justify-content: center;
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
 
 .form-item-btn button {
@@ -708,12 +720,19 @@ textarea:focus {
 
 .form-item-btn button:hover {
   padding: 11px 16px;
+  border-left: 4px solid black;
+  border-top: 4px solid black;
 }
 
 /*                  Responsive                  */
 
-@media screen {
-  .content-home .content .content-right {
-    margin-left: none;
+@media (max-width: 768px) {
+  #title-aside {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .content-aside-left {
+    width: 95%;
   }
 }
