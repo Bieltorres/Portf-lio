@@ -976,7 +976,7 @@ textarea:focus {
     min-height: 80px;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 4rem;
+    gap: 1rem;
     width: 100%;
   }
 
@@ -1110,5 +1110,12 @@ textarea:focus {
     justify-content: center;
     gap: 3rem;
     padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 445px) {
+  #links-aside {
+    display: flex;
+    gap: 1rem;
   }
 }
