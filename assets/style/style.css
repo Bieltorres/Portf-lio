@@ -948,3 +948,131 @@ textarea:focus {
     font-size: 14px;
   }
 }
+
+@media (max-width: 470px) {
+  /* .main {
+    margin-top: 80px;
+  } */
+
+  #aside {
+    position: absolute;
+    min-height: 0;
+    width: 100%;
+  }
+
+  .content-aside-left {
+    min-height: 80px;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #links-aside {
+    width: 50%;
+    display: flex;
+    gap: 5px;
+  }
+
+  #links-aside li a {
+    font-size: 10px;
+    width: 95%;
+  }
+
+  #icons {
+    display: none;
+  }
+
+  .text-aside {
+    width: 5%;
+    font-size: small;
+  }
+
+  #links-aside li {
+    padding: 0;
+    font-weight: 500;
+  }
+
+  /* Content home  */
+
+  .main-content .content-home {
+    margin-top: 80px;
+    height: 15%;
+    min-height: 16.9%;
+    display: flex;
+  }
+
+  #content #main-content {
+    height: 80%;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  #titles #text-user {
+    font-size: 16px;
+  }
+
+  #titles #title2 {
+    font-size: 18px;
+  }
+
+  #titles #title3 {
+    font-size: 14px;
+  }
+
+  #content {
+    height: 100%;
+    display: contents;
+  }
+
+  #main-content {
+    align-content: center;
+
+    height: 100%;
+  }
+
+  .content-home {
+    min-height: 20%;
+  }
+
+  #img-content {
+    display: inline;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #img-content #img {
+    margin-right: 1rem;
+    width: 40%;
+  }
+
+  /* About section */
+
+  .about-section {
+    min-height: 32%;
+  }
+
+  .about-section .section-title h1 {
+    font-size: 22px;
+  }
+
+  .about-text h3 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-content .row3 {
+    margin: 0;
+  }
+
+  .skills {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 40px;
+  }
+}
