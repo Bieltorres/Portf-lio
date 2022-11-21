@@ -807,7 +807,7 @@ textarea:focus {
   }
 }
 
-@media (max-width: 545px) {
+@media (max-width: 600px) {
   /* Aside */
 
   .content-aside-left {
@@ -949,7 +949,7 @@ textarea:focus {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 545px) {
   /* .main {
     margin-top: 80px;
   } */
