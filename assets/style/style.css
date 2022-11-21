@@ -724,9 +724,17 @@ textarea:focus {
   border-top: 4px solid black;
 }
 
+#icons1 {
+  display: none;
+}
+
 /*                  Responsive                  */
 
 @media (max-width: 768px) {
+  #icons1 {
+    display: none;
+  }
+
   #title-aside {
     font-size: 16px;
     padding: 5px 10px;
@@ -808,6 +816,10 @@ textarea:focus {
 }
 
 @media (max-width: 600px) {
+  #icons1 {
+    display: none;
+  }
+
   /* Aside */
 
   .content-aside-left {
@@ -963,18 +975,27 @@ textarea:focus {
   .content-aside-left {
     min-height: 80px;
     flex-direction: row;
+    justify-content: flex-start;
+    gap: 4rem;
     width: 100%;
   }
 
   #links-aside {
-    width: 50%;
     display: flex;
-    gap: 5px;
+    gap: 2rem;
   }
 
   #links-aside li a {
-    font-size: 10px;
+    font-size: 13px;
     width: 95%;
+  }
+
+  .home {
+    display: none;
+  }
+
+  .serviços {
+    display: none;
   }
 
   #icons {
@@ -982,8 +1003,7 @@ textarea:focus {
   }
 
   .text-aside {
-    width: 5%;
-    font-size: small;
+    width: 30%;
   }
 
   #links-aside li {
@@ -1074,5 +1094,13 @@ textarea:focus {
     flex-direction: column;
     gap: 0;
     padding: 0 40px;
+  }
+
+  #icons1 {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
   }
 }
