@@ -335,6 +335,10 @@ a i {
 }
 
 .btn-hire-me {
+  height: 25%;
+  width: 20%;
+  display: flex;
+  align-items: end;
   padding: 10px;
   background-color: orangered;
   color: aliceblue;
